@@ -1,0 +1,4 @@
+SELECT SYSDATE,
+	   ROUND(SYSDATE) "익일",
+	   TRUNC(SYSDATE) "당일"
+  FROM dual;

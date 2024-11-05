@@ -1,0 +1,5 @@
+SELECT TO_NUMBER('15') + 1,
+	   TO_NUMBER('1234.56','9999.99') + 1,
+	   TO_NUMBER('$1,234.56','$9,999.99') + 1
+  FROM dual
+ ;

@@ -1,0 +1,4 @@
+SELECT SYSDATE, 
+	   NEXT_DAY(SYSDATE,'È­'),
+	   NEXT_DAY(SYSDATE,'±Ý')
+  FROM dual;

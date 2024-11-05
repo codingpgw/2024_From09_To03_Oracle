@@ -1,0 +1,4 @@
+SELECT INSTR('2024-10-31','-') "RESULT",
+	   INSTR('2024-10-31','-',1,2) "RESULT2"
+  FROM dual
+;

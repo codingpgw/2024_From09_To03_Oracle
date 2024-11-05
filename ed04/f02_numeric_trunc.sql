@@ -1,0 +1,4 @@
+SELECT TRUNC(15.79,1),
+	   TRUNC(15.79,0),
+	   TRUNC(15.79,-1)
+  FROM dual;
