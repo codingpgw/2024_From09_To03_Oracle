@@ -1,0 +1,16 @@
+EXPLAIN PLAN FOR
+SELECT *
+FROM(
+SELECT deptno,job,AVG(NVL(sal,0)) AS "AVG_SAL",COUNT(*) CNT_EMP
+  FROM emp
+GROUP BY deptno,job
+UNION 
+SELECT deptno,NULL JOB,AVG(NVL(sal,0)) "AVG_SAL",COUNT(*) CNT_EMP
+  FROM emp
+GROUP BY deptno
+UNION
+SELECT NULL, NULL JOB, AVG(NVL(sal,0)) "AVG_SAL",COUNT(*) CNT_EMP
+  FROM emp
+)
+ORDER BY deptno,job
+;

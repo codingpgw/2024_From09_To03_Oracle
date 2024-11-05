@@ -1,0 +1,10 @@
+SELECT  deptno,
+		CASE 
+        WHEN JOB IS NULL AND DEPTNO IS NOT NULL THEN 'ºÎ¼­º° ÃÑ°è'
+        WHEN JOB IS NULL AND DEPTNO IS NULL THEN 'ÀüÃ¼ ÃÑ°è'
+        ELSE JOB
+    END AS JOB, 
+	AVG(NVL(sal,0)) AS "AVG_SAL",COUNT(*) CNT_EMP
+  FROM emp
+GROUP BY ROLLUP(deptno,job)
+;
