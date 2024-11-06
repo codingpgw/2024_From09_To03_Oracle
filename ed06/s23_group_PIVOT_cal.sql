@@ -1,0 +1,34 @@
+--PW_CALENDAR
+--YEAR	MONTH	DAYNO	WEEKNO	WEEK
+--INSERT INTO pw_calendar VALUES(2025,1,1,1,'WED');
+
+INSERT INTO pw_calendar VALUES(2025,1,2 ,  1,'THU');
+INSERT INTO pw_calendar VALUES(2025,1,3	,  1,'FRI');
+INSERT INTO pw_calendar VALUES(2025,1,4	,  1,'SAT');
+INSERT INTO pw_calendar VALUES(2025,1,5	,  2,'SUN');
+INSERT INTO pw_calendar VALUES(2025,1,6	,  2,'MON');
+INSERT INTO pw_calendar VALUES(2025,1,7	,  2,'TUE');
+INSERT INTO pw_calendar VALUES(2025,1,8	,  2,'WED');
+INSERT INTO pw_calendar VALUES(2025,1,9	,  2,'THU');
+INSERT INTO pw_calendar VALUES(2025,1,10,  2,'FRI');
+INSERT INTO pw_calendar VALUES(2025,1,11,  2,'SAT');
+INSERT INTO pw_calendar VALUES(2025,1,12,  3,'SUN');
+INSERT INTO pw_calendar VALUES(2025,1,13,  3,'MON');
+INSERT INTO pw_calendar VALUES(2025,1,14,  3,'TUE');
+INSERT INTO pw_calendar VALUES(2025,1,15,  3,'WED');
+INSERT INTO pw_calendar VALUES(2025,1,16,  3,'THU');
+INSERT INTO pw_calendar VALUES(2025,1,17,  3,'FRI');
+INSERT INTO pw_calendar VALUES(2025,1,18,  3,'SAT');
+INSERT INTO pw_calendar VALUES(2025,1,19,  4,'SUN');
+INSERT INTO pw_calendar VALUES(2025,1,20,  4,'MON');
+INSERT INTO pw_calendar VALUES(2025,1,21,  4,'TUE');
+INSERT INTO pw_calendar VALUES(2025,1,22,  4,'WED');
+INSERT INTO pw_calendar VALUES(2025,1,23,  4,'THU');
+INSERT INTO pw_calendar VALUES(2025,1,24,  4,'FRI');
+INSERT INTO pw_calendar VALUES(2025,1,25,  4,'SAT');
+INSERT INTO pw_calendar VALUES(2025,1,26,  5,'SUN');
+INSERT INTO pw_calendar VALUES(2025,1,27,  5,'MON');
+INSERT INTO pw_calendar VALUES(2025,1,28,  5,'TUE');
+INSERT INTO pw_calendar VALUES(2025,1,29,  5,'WED');
+INSERT INTO pw_calendar VALUES(2025,1,30,  5,'THU');   
+INSERT INTO pw_calendar VALUES(2025,1,31,  5,'FRI');
