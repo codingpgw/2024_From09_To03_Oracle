@@ -1,0 +1,26 @@
+col TOTAL for a8
+SELECT TO_CHAR(TOTAL, '999,999') AS "TOTAL",
+	   NVL(SEOUL,	 0) AS SEOUL,
+	   NVL(GYEONGGI, 0) AS GYEONGGI,
+	   NVL(BUSAN,	 0) AS BUSAN,
+	   NVL(ULSAN,	 0) AS ULSAN,
+	   NVL(DAEGU,	 0) AS DAEGU,
+	   NVL(GYEONGANM,0) AS GYEONGANM
+  FROM(  
+	SELECT * 
+	FROM (SELECT studno,SUBSTR(tel,1,INSTR(tel,')')-1) AS local, COUNT(*)OVER() TOTAL
+          FROM student
+	)
+	PIVOT(
+		COUNT(studno)
+		FOR local IN (
+			'02'  AS SEOUL,
+			'031' AS GYEONGGI,
+			'051' AS BUSAN,
+			'052' AS ULSAN,
+			'053' AS DAEGU,
+			'055' AS GYEONGANM
+		)
+	)
+)
+;
