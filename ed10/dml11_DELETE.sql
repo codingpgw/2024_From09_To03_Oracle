@@ -1,0 +1,8 @@
+DELETE FROM dept2 
+WHERE dcode BETWEEN '9000' AND '9999';
+
+SELECT *
+  FROM dept2
+ WHERE dcode BETWEEN '9000' AND '9999';
+ 
+ COMMIT;

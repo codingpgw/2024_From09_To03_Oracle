@@ -1,8 +1,0 @@
---SELECT 'A', 1 FROM DUAL
---UNION ALL
---SELECT 'A',1 FROM DUAL;
-SELECT deptno,
-	   job
-  FROM emp
-ORDER BY 1,2
-;
