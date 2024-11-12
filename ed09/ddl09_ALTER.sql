@@ -1,0 +1,6 @@
+--ALTER TABLE dept6 ADD (LOCATION VARCHAR2(10) DEFAULT 'SEOUL');
+col dname for a28
+
+SELECT * 
+  FROM dept6
+;
