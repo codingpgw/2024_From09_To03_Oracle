@@ -1,0 +1,12 @@
+--MERGE INTO ch_total t1
+--USING charge_01 t2
+--   ON (t1.u_date = t2.u_date)
+--   WHEN MATCHED THEN
+--		UPDATE SET t1.cust_no = t2.cust_no,
+--				   t1.u_time  = t2.u_time,
+--				   t1.charge  = t2.charge
+--   WHEN NOT MATCHED THEN
+--		INSERT VALUES(t2.u_date,t2.cust_no,t2.u_time,t2.charge)
+--;
+
+--SELECT * FROM ch_total ORDER BY cust_no;

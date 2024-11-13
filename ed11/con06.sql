@@ -1,0 +1,4 @@
+ALTER TABLE new_emp2
+ADD CONSTRAINT emp2_name_fk FOREIGN KEY(name)
+REFERENCES emp2(name)
+;
