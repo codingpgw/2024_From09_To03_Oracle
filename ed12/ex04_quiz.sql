@@ -1,0 +1,3 @@
+ALTER TABLE tcons
+ENABLE VALIDATE CONSTRAINT tcons_jumin_uk
+EXCEPTIONS INTO exceptions;

@@ -1,0 +1,2 @@
+ALTER TABLE tcons
+DISABLE VALIDATE CONSTRAINT tcons_jumin_uk;
