@@ -31,6 +31,10 @@
 -- GROUP BY col1
 -- HAVING COUNT(*)>2;
 
-SELECT COUNT(*)
-  FROM test_ex998
- WHERE col1 NOT IN(NULL,2);
+--SELECT COUNT(*)
+--  FROM test_ex998
+-- WHERE col1 NOT IN(NULL,2);
+
+SELECT TO_CHAR('24-03','YYYY-MM-DD') 
+  FROM dual
+ ;
