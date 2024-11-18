@@ -1,0 +1,7 @@
+CREATE TABLE with_test1(
+	no NUMBER,
+	name VARCHAR2(10),
+	pay NUMBER(7)
+)
+TABLESPACE USERS
+;

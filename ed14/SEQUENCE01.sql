@@ -1,0 +1,16 @@
+--SEQUENCE 이름 : JON_SEQ
+--시작값 : 100
+--끝 값 : 110
+--증가값 : 1
+--캐싱  : 2
+--순환  : Y
+--반복 시 시작값 : 90
+
+CREATE SEQUENCE JON_SEQ
+INCREMENT BY 1
+START WITH 100
+MAXVALUE 110
+MINVALUE 90
+CACHE 2
+CYCLE
+;

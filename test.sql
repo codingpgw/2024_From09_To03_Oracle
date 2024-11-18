@@ -35,6 +35,7 @@
 --  FROM test_ex998
 -- WHERE col1 NOT IN(NULL,2);
 
-SELECT TO_CHAR('24-03','YYYY-MM-DD') 
-  FROM dual
- ;
+--SELECT REGEXP_INSTR('123456789','((1,2),(4,(5,6),(7,8,9)))',1,1,0,'i',2)
+--  FROM dual;
+
+ 

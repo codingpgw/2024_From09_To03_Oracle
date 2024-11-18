@@ -1,0 +1,9 @@
+--½Ã³ë´Ô Á¶È¸
+
+COL SYNONYM_NAME for a15
+col TABLE_OWNER for a15
+col TABLE_NAME for a15
+col DB_LINK for a15
+SELECT SYNONYM_NAME,TABLE_OWNER,TABLE_NAME,DB_LINK
+  FROM user_synonyms
+ ;

@@ -1,0 +1,12 @@
+--CREATE SEQUENCE jno_seq_rev
+--INCREMENT BY -2
+--MINVALUE 0
+--MAXVALUE 20
+--START WITH 10;
+
+--CREATE TABLE s_rev(no NUMBER);
+
+--데이터 입력
+INSERT INTO s_rev VALUES(jno_seq_rev.NEXTVAL);
+
+SELECT * FROM s_rev;
