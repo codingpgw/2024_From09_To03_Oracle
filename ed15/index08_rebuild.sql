@@ -1,0 +1,48 @@
+--step 1. 테스트용 테이블 i_test를 생성하고 데이터를 넣은 후 인덱스를 생성한다.
+--CREATE TABLE i_test(
+--	no NUMBER
+--);
+
+--BEGIN
+--	FOR i IN 1..10000 LOOP
+--		INSERT INTO i_test VALUES(i);
+--	END LOOP;
+--	COMMIT;
+--END;
+--/
+
+--인덱스 생성
+--CREATE INDEX IDX_ITEST_NO
+--ON i_test(no);
+
+--step 2. 인덱스의 상태를 조회한다.
+--인덱스 통계정보
+--ANALYZE INDEX IDX_ITEST_NO VALIDATE STRUCTURE;
+--
+-- SELECT (DEL_LF_ROWS_LEN/LF_ROWS_LEN)*100 "BALANCE"
+--   FROM INDEX_STATS
+--  WHERE name = 'IDX_ITEST_NO';
+
+
+--step 3. 테이블에서 10000건의 데이터 중 4000건 삭제 후 인덱스 상태 조회
+--SELECT COUNT(*)
+--  FROM i_test
+-- WHERE no BETWEEN 1 AND 4000;
+--DELETE FROM i_test
+--WHERE no BETWEEN 1 AND 4000;
+
+--SELECT COUNT(*)
+--  FROM i_test;
+  
+--COMMIT;
+--ANALYZE INDEX IDX_ITEST_NO VALIDATE STRUCTURE;
+-- SELECT (DEL_LF_ROWS_LEN/LF_ROWS_LEN)*100 "BALANCE"
+--   FROM INDEX_STATS
+--  WHERE name = 'IDX_ITEST_NO';
+  
+--step 4. rebuild
+ALTER INDEX IDX_ITEST_NO rebuild;
+ANALYZE INDEX IDX_ITEST_NO VALIDATE STRUCTURE;
+SELECT (DEL_LF_ROWS_LEN/LF_ROWS_LEN)*100 "BALANCE"
+  FROM INDEX_STATS
+ WHERE name = 'IDX_ITEST_NO';

@@ -37,5 +37,9 @@
 
 --SELECT REGEXP_INSTR('123456789','((1,2),(4,(5,6),(7,8,9)))',1,1,0,'i',2)
 --  FROM dual;
-
- 
+SELECT ename "aab",empno "aaa"
+  FROM emp
+UNION
+SELECT ename "bba",empno "bbb"
+  FROM emp
+;
