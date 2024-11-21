@@ -1,0 +1,13 @@
+--CREATE VIEW V_PTABLE2
+--AS
+--SELECT no,name
+--  FROM p_table
+--WITH READ ONLY
+--  ;
+
+--INSERT INTO V_PTABLE2 VALUES(1,'이상무01');
+
+
+INSERT INTO p_table VALUES(1,'이상무01');
+
+SELECT * FROM V_PTABLE2;
