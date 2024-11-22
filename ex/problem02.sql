@@ -1,0 +1,20 @@
+INSERT INTO board_99
+SELECT LEVEL SEQ,
+	   'Á¦¸ñ '|| LEVEL TITLE,
+	   NULL CONTENTS,
+	   CASE
+       WHEN LEVEL IN(13,14,15) THEN '20'
+       ELSE '10'
+       END DIV,
+	   CASE
+       WHEN LEVEL IN(13,14,15) THEN 1
+       ELSE 0
+       END READ_CNT,
+	   '20230508' REG_DT,
+	   'PCWK' REG_ID,
+	   '20230508' MOD_DT,
+	   'PCWK' MOD_ID
+  FROM dual
+CONNECT BY LEVEL <= 15
+;
+COMMIT;
